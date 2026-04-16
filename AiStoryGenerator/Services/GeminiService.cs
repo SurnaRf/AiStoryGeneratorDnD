@@ -7,8 +7,8 @@ public class GeminiService
 {
 	private readonly HttpClient _httpClient = new HttpClient();
 
-	private string apiKey = "AIzaSyD5-V3Ay3Znqqkn_JouU7F-SBjUNgL0cF4";
-	private string apiKey2 = "AQ.Ab8RN6K1CuPnE8P2RUYssap8u50IDFXo7eUdFX0RAcF0hTvt_g";
+	private string apiKey = "INSERT_API_KEY";
+	private string apiKey2 = "INSERT_API_KEY";
 
 	public async Task<string> GenerateStory(string prompt)
 	{

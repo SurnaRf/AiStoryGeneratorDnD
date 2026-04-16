@@ -7,7 +7,7 @@ public class ImageService
 {
 	private readonly HttpClient _httpClient = new HttpClient();
 
-	private string apiKey = "sk-m0i0DQrYXb3mWKyshpJd33xAttpjZogl3SCOmhnIPi8FlRar";
+	private string apiKey = "INSERT_API_KEY";
 
 	public async Task<string?> GenerateCharacterImage(string characterPrompt, string setting)
 	{
