@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AiStoryGenerator"
+             x:Class="AiStoryGenerator.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="DiceButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#080F08"/>
+                <Setter Property="TextColor" Value="#8FA87C"/>
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="WidthRequest" Value="60"/>
+                <Setter Property="HeightRequest" Value="44"/>
+                <Setter Property="CornerRadius" Value="3"/>
+                <Setter Property="BorderColor" Value="#3A5A2A"/>
+                <Setter Property="BorderWidth" Value="1"/>
+            </Style>
+
+            <Style x:Key="StatBox" TargetType="Border">
+                <Setter Property="BackgroundColor" Value="#080F08"/>
+                <Setter Property="StrokeThickness" Value="1"/>
+                <Setter Property="Padding" Value="8,10"/>
+                <Setter Property="Stroke">
+                    <Setter.Value>
+                        <SolidColorBrush Color="#2A4020"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="StrokeShape">
+                    <Setter.Value>
+                        <RoundRectangle CornerRadius="3"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="StatLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="CinzelRegular"/>
+                <Setter Property="FontSize" Value="9"/>
+                <Setter Property="CharacterSpacing" Value="1.5"/>
+                <Setter Property="TextColor" Value="#5A7A45"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="StatValue" TargetType="Label">
+                <Setter Property="FontFamily" Value="CinzelRegular"/>
+                <Setter Property="FontSize" Value="26"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="#D4C5A9"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="StatMod" TargetType="Label">
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="FontAttributes" Value="Italic"/>
+                <Setter Property="TextColor" Value="#7A8E6E"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
